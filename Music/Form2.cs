@@ -16,7 +16,7 @@ namespace Music
     {
         // запрос
 
-        private void Select_Grid(int g)
+        private void Update_Grid(int g)
         {
             
             this.dataGridView1.Rows.Clear();  // удаление всех строк
@@ -101,7 +101,7 @@ namespace Music
 
             dataGridView1.AllowUserToAddRows = false;
 
-            Select_Grid(0);
+            Update_Grid(0);
         }
 
 
@@ -122,13 +122,13 @@ namespace Music
         private void button2_Click(object sender, EventArgs e)
         {
             int g = 0;
-            Select_Grid(g);
+            Update_Grid(g);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             int g = 2;
-            Select_Grid(g);
+            Update_Grid(g);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -139,13 +139,13 @@ namespace Music
         private void button5_Click(object sender, EventArgs e)
         {
             int g = 3;
-            Select_Grid(g);
+            Update_Grid(g);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             int g = 1;
-            Select_Grid(g);
+            Update_Grid(g);
         }
     }
 
