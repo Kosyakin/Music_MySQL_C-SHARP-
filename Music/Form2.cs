@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,14 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
+using System.IO;
+
 namespace Music
 {
     public partial class Form2 : Form
     {
         // запрос
 
-        private void Select(int g)
+        private void Select_Grid(int g)
         {
             
             this.dataGridView1.Rows.Clear();  // удаление всех строк
@@ -100,7 +101,7 @@ namespace Music
 
             dataGridView1.AllowUserToAddRows = false;
 
-            Select(0);
+            Select_Grid(0);
         }
 
 
@@ -121,13 +122,13 @@ namespace Music
         private void button2_Click(object sender, EventArgs e)
         {
             int g = 0;
-            Select(g);
+            Select_Grid(g);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             int g = 2;
-            Select(g);
+            Select_Grid(g);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -138,15 +139,16 @@ namespace Music
         private void button5_Click(object sender, EventArgs e)
         {
             int g = 3;
-            Select(g);
+            Select_Grid(g);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             int g = 1;
-            Select(g);
+            Select_Grid(g);
         }
     }
 
 }
+
 
