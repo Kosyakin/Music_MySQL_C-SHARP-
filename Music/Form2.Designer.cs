@@ -34,7 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -69,7 +69,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Все треки";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Batton_Update);
             // 
             // button3
             // 
@@ -79,7 +79,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "90-e";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Batton_Select_90);
             // 
             // button4
             // 
@@ -89,17 +89,17 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "80-e";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.Batton_Select_80);
             // 
-            // button5
+            // button21
             // 
-            this.button5.Location = new System.Drawing.Point(12, 145);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(152, 24);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Музыка 21-го века";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button21.Location = new System.Drawing.Point(12, 145);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(152, 24);
+            this.button21.TabIndex = 5;
+            this.button21.Text = "Музыка 21-го века";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.Batton_Select_21);
             // 
             // label1
             // 
@@ -118,7 +118,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button21);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
@@ -154,7 +154,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
     }
