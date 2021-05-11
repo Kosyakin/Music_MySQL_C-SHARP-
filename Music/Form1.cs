@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +21,16 @@ namespace Music
         {
             InitializeComponent();
         }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
 
 
         //////////ВЫВОД ТЭГОВ
@@ -53,10 +63,11 @@ namespace Music
 
 
         /////////// ЗАПИСЬ В DATABASE (Плейлист)
-        private void button2_Click_1(object sender, EventArgs e)
+        private void Button_Write_to_DB(object sender, EventArgs e)
         {
 
-            string Connect = "Database = music; Data Source =localhost; User Id =root; Password=root;";
+            string Connect = "Database = music; Data Source =localhost; User Id =root; Password=root;"; //строка подключения к серверу
+            
             try
             {
                 string File = textBox1.Text;
@@ -91,7 +102,7 @@ namespace Music
         }
 
         ///////////// ОБЗОР ФАЙЛОВ
-        private void button3_Click(object sender, EventArgs e)
+        private void Buttom_OpenFile(object sender, EventArgs e)
         {
             int size = -1;
             DialogResult result = openFileDialog2.ShowDialog(); // Show the dialog.
@@ -115,7 +126,7 @@ namespace Music
             Console.WriteLine(result); // <-- For debugging use.
             Select();
         }
+
+       
     }
 }
-
-    
