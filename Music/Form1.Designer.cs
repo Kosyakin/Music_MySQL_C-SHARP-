@@ -1,4 +1,4 @@
-﻿namespace Music
+namespace Music
 {
     partial class Form1
     {
@@ -64,7 +64,7 @@
             this.label2.Size = new System.Drawing.Size(55, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Альбом:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            
             // 
             // textBox1
             // 
@@ -73,7 +73,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(330, 20);
             this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // textBox2
             // 
@@ -82,7 +82,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(108, 20);
             this.textBox2.TabIndex = 5;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            
             // 
             // label3
             // 
@@ -95,7 +95,7 @@
             this.label3.Size = new System.Drawing.Size(32, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Год:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            
             // 
             // textBox3
             // 
@@ -104,7 +104,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(108, 20);
             this.textBox3.TabIndex = 7;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            
             // 
             // label4
             // 
@@ -117,7 +117,7 @@
             this.label4.Size = new System.Drawing.Size(89, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "Исполнители:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            
             // 
             // label5
             // 
@@ -130,7 +130,7 @@
             this.label5.Size = new System.Drawing.Size(96, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = "Длительность:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            
             // 
             // textBox4
             // 
@@ -147,7 +147,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(108, 20);
             this.textBox5.TabIndex = 11;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+           
             // 
             // button2
             // 
@@ -159,7 +159,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Добавить в плейлист";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.Click += new System.EventHandler(this.Button_Write_to_DB);
             // 
             // button3
             // 
@@ -171,7 +171,7 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Обзор";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Buttom_OpenFile);
             // 
             // openFileDialog2
             // 
@@ -200,7 +200,7 @@
             this.AlbumLabel.Size = new System.Drawing.Size(40, 16);
             this.AlbumLabel.TabIndex = 19;
             this.AlbumLabel.Text = "None";
-            this.AlbumLabel.Click += new System.EventHandler(this.AlbumLabel_Click);
+           
             // 
             // YearLabel
             // 
@@ -213,7 +213,7 @@
             this.YearLabel.Size = new System.Drawing.Size(40, 16);
             this.YearLabel.TabIndex = 20;
             this.YearLabel.Text = "None";
-            this.YearLabel.Click += new System.EventHandler(this.YearLabel_Click);
+            
             // 
             // PerformerLabel
             // 
@@ -226,7 +226,7 @@
             this.PerformerLabel.Size = new System.Drawing.Size(40, 16);
             this.PerformerLabel.TabIndex = 21;
             this.PerformerLabel.Text = "None";
-            this.PerformerLabel.Click += new System.EventHandler(this.PerformerLabel_Click);
+           
             // 
             // DurationLabel
             // 
@@ -251,8 +251,8 @@
             this.TitleLabel.Size = new System.Drawing.Size(40, 16);
             this.TitleLabel.TabIndex = 25;
             this.TitleLabel.Text = "None";
-            this.TitleLabel.Click += new System.EventHandler(this.label7_Click);
-            // 
+            
+            //
             // textBox6
             // 
             this.textBox6.BackColor = System.Drawing.Color.Gainsboro;
@@ -260,7 +260,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(108, 20);
             this.textBox6.TabIndex = 24;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            
             // 
             // label8
             // 
@@ -273,7 +273,7 @@
             this.label8.Size = new System.Drawing.Size(65, 16);
             this.label8.TabIndex = 23;
             this.label8.Text = "Название";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            
             // 
             // label1
             // 
@@ -286,7 +286,7 @@
             this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Путь к файлу:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // pictureBox1
             // 
@@ -297,7 +297,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(534, 266);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            
             // 
             // Form1
             // 
@@ -359,4 +359,3 @@
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
-
