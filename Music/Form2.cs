@@ -16,7 +16,7 @@ namespace Music
     {
         // запрос
 
-        private void Update_Grid(int g)
+        private void Update_Grid(string query)
         {
             
             this.dataGridView1.Rows.Clear();  // удаление всех строк
@@ -29,19 +29,6 @@ namespace Music
             string Connect = "Database = music; Data Source =localhost; User Id =root; Password=root;";
             MySqlConnection connection = new MySqlConnection(Connect);
             connection.Open();
-            // запрос
-            string query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs;"; 
-            if (g == 0)
-            { query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs;"; }
-        
-            
-            if (g == 1)
-            {
-                query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs WHERE Year < 1990 AND Year>1979;";
-            }
-            if (g == 2) { query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs WHERE Year < 2000 AND Year>1989;";
-            }
-            if (g == 3) { query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs WHERE Year >2000;"; }
 
             // запрос на чтение
             MySqlCommand command = new MySqlCommand(query, connection);
@@ -99,9 +86,8 @@ namespace Music
         private void Form2_Load(object sender, EventArgs e)
         {
 
-            dataGridView1.AllowUserToAddRows = false;
-
-            Update_Grid(0);
+            string query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs;";
+            Update_Grid(query);
         }
 
 
@@ -109,43 +95,46 @@ namespace Music
         
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 f2 = new Form1();
-            f2.Show();
+            Form1 f1 = new Form1();
+            f1.Show();
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int g = 0;
-            Update_Grid(g);
+            string query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs;";
+            Update_Grid(query);
         }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs WHERE Year < 1990 AND Year>1979;";
 
+            Update_Grid(query);
+        }
         private void button3_Click(object sender, EventArgs e)
         {
-            int g = 2;
-            Update_Grid(g);
+            string query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs WHERE Year < 2000 AND Year>1989;";
+            Update_Grid(query);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
 
         private void button5_Click(object sender, EventArgs e)
         {
             int g = 3;
-            Update_Grid(g);
+            string query = "SELECT id,Title, Performer, Album, Year, Duration FROM tegs WHERE Year >2000;";
+            Update_Grid(query);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            int g = 1;
-            Update_Grid(g);
+
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 
