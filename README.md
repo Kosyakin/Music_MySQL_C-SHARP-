@@ -22,7 +22,7 @@
     
      
       
-![](/UML_Diagrams/UML Sequence Diagram.PNG)
+![](UML_Diagrams/UML Sequence Diagram.PNG)
 
 
 ## Цель работы:
