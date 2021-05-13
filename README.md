@@ -23,7 +23,7 @@
      
       
 ![](/UML_Diagrams/UML_Sequence_Diagram.PNG)
-
+![](/UML_Diagrams/UML2.PNG)
 
 ## Цель работы:
 ### Реализовать следующие компоненты (модули) системы:
