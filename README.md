@@ -23,6 +23,9 @@
      
       
 ![](/UML_Diagrams/UML_Sequence_Diagram.PNG)
+
+Диаграмма с методами приложения
+
 ![](/UML_Diagrams/UML2.PNG)
 
 ## Цель работы:
