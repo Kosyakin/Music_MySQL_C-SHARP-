@@ -21,7 +21,7 @@
         3.2 Запись в GridVeiw
     
      
-      
+![](/UML_Diagrams/UML_3.PNG)
 ![](/UML_Diagrams/UML_Sequence_Diagram.PNG)
 ![](/UML_Diagrams/UML_1.PNG)
 Диаграмма с методами приложения
