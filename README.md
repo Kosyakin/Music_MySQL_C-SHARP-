@@ -23,7 +23,7 @@
      
       
 ![](/UML_Diagrams/UML_Sequence_Diagram.PNG)
-
+![](/UML_Diagrams/UML_1.PNG)
 Диаграмма с методами приложения
 
 ![](/UML_Diagrams/UML2.PNG)
