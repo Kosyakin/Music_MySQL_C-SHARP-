@@ -2,11 +2,11 @@
 # UML диаграммы
 ### Диаграмма 1
 
-![](/UML_Diagrams/UML_3.PNG)
+![](/UML_Diagrams/UML_3_1.PNG)
 
 ### Диаграмма 2
 
-![](/UML_Diagrams/UML_Sequence_Diagram.PNG)
+![](/UML_Diagrams/UML_Sequence_Diagram_1.PNG)
 
 ## Легенда к диаграмме 2
 ### 1)Просмотр аудио фалов и их метоинформации(тегов)      
